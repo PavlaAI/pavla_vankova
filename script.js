@@ -54,4 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         requestAnimationFrame(animationScroll);
     });
+
+    // Animace pro text 'Pavla Vaňková' při načítání stránky
+    const pavlaText = document.querySelector('.pavla-vankova');
+    pavlaText.classList.add('fadeInUp');
 });
