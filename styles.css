@@ -43,10 +43,9 @@ section {
   animation: fadeInUp 1s ease-out;
 }
 
-.hero p {
+.hero h2 {
   font-size: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  animation: fadeInUp 1.5s ease-out;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Přidání stínu k textu 'Podnikavec a Growth Seeker' */
 }
 
 .cta-button {
@@ -152,4 +151,20 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+/* Animace pro text 'Pavla Vaňková' při spuštění */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pavla-vankova {
+  animation: fadeInUp 1s ease-out;
 }
